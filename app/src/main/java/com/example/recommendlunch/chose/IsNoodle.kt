@@ -18,6 +18,7 @@ class IsNoodle : AppCompatActivity() {
             noodleYes.setOnClickListener {
                 val intent= Intent(this, IsCold::class.java)
                 code+="1"
+                intent.putExtra("code",code)
                 startActivity(intent)
                 finish()
             }
